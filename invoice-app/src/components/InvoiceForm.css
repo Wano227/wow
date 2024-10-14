@@ -1,0 +1,337 @@
+.invoice-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo-upload {
+  width: 300px;
+  height: 100px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-placeholder {
+  color: #888;
+  text-align: center;
+}
+
+.company-info input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.invoice-details h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.invoice-info input {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.bill-to {
+  margin-bottom: 30px;
+}
+
+.bill-to input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.item-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.item-table th,
+.item-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.item-table input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.totals {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.totals div {
+  margin-left: 20px;
+}
+
+.totals input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.total-amount {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.notes {
+  margin-top: 30px;
+}
+
+.notes textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.saved-invoices {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.saved-invoices ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.saved-invoices li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saved-invoices button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Theme-specific styles */
+.theme1 {
+  background-color: #f5f5dc; /* beige */
+}
+
+.theme1 button,
+.theme1 .item-table th {
+  background-color: #000080; /* navy blue */
+  color: #ffffff; /* white */
+}
+
+.theme1 h1,
+.theme1 .total-amount {
+  color: #008080; /* teal */
+}
+
+.theme2 {
+  background-color: #efeae6; /* beige */
+}
+
+.theme2 button,
+.theme2 .item-table th {
+  background-color: #2d5622; /* navy blue */
+  color: #e4f2ea; /* white */
+}
+
+.theme2 h1,
+.theme2 .total-amount {
+  color: #e2a54d; /* teal */
+}
+
+.theme3 {
+  background-color: #dbcdbd; /* beige */
+}
+
+.theme3 button,
+.theme3 .item-table th {
+  background-color: #152423; /* navy blue */
+  color: #9eb0af; /* white */
+}
+
+.theme3 h1,
+.theme3 .total-amount {
+  color: #484840; /* teal */
+}
+
+.theme4 {
+  background-color: #e0d6d9; /* beige */
+}
+
+.theme4 button,
+.theme4 .item-table th {
+  background-color: #ad525e; /* navy blue */
+  color: #ffffff; /* white */
+}
+
+.theme4 h1,
+.theme4 .total-amount {
+  color: #c2d9d1; /* teal */
+}
+
+
+.theme6 {
+  background-color: #e8f0f2; /* light blue-gray */
+}
+
+.theme6 button,
+.theme6 .item-table th {
+  background-color: #305f72; /* deep teal */
+  color: #ffffff; /* white */
+}
+
+.theme6 h1,
+.theme6 .total-amount {
+  color: #3d848a; /* teal */
+}
+
+.theme7 {
+  background-color: #f3f0e1; /* light beige */
+}
+
+.theme7 button,
+.theme7 .item-table th {
+  background-color: #6b4226; /* dark brown */
+  color: #ffffff; /* white */
+}
+
+.theme7 h1,
+.theme7 .total-amount {
+  color: #8e6a4d; /* medium brown */
+}
+.theme8 {
+  background-color: #f1ecec; /* light gray */
+}
+
+.theme8 button,
+.theme8 .item-table th {
+  background-color: #5a6a72; /* slate gray */
+  color: #ffffff; /* white */
+}
+
+.theme8 h1,
+.theme8 .total-amount {
+  color: #7a8a8f; /* soft gray-blue */
+}
+.theme9 {
+  background-color: #e7f5e9; /* pale green */
+}
+
+.theme9 button,
+.theme9 .item-table th {
+  background-color: #3e8e41; /* forest green */
+  color: #ffffff; /* white */
+}
+
+.theme9 h1,
+.theme9 .total-amount {
+  color: #5da664; /* soft green */
+}
+.theme10 {
+  background-color: #ece8fc; /* light lavender */
+}
+
+.theme10 button,
+.theme10 .item-table th {
+  background-color: #6a52a3; /* deep purple */
+  color: #ffffff; /* white */
+}
+
+.theme10 h1,
+.theme10 .total-amount {
+  color: #8c78c0; /* lavender */
+}
+.theme5 {
+  background-color: #f4f1ea; /* soft cream */
+}
+
+.theme5 button,
+.theme5 .item-table th {
+  background-color: #b35a2b; /* burnt orange */
+  color: #ffffff; /* white */
+}
+
+.theme5 h1,
+.theme5 .total-amount {
+  color: #d48865; /* light terracotta */
+}
